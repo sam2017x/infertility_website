@@ -2,6 +2,9 @@
 client/node_modules
 client/build
 server/node_modules
+server/package-lock.json
+client/package-lock.json
 node_modules
 server/logs/*
 server/apidoc
+package-lock.json
