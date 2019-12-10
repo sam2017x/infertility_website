@@ -1,0 +1,98 @@
+.container
+    text-align: center
+
+    ul
+        li
+            list-style-type: none
+
+    .forms
+
+        form
+            position: relative
+            display: flex
+            flex-direction: column
+            justify-content: center
+            max-width: 250px
+            left: 50%
+            margin-left: -125px
+            
+
+            input 
+                margin-bottom: 10px
+                font-family: Futura,Trebuchet MS,Arial,sans-serif
+                color: #63584C
+                font-size: 13px
+                
+            input[type=button]
+                margin: 0 auto 10px
+
+    .users-list
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        max-width: 250px
+        left: 50%
+        margin-left: -125px
+    
+        ul
+            margin-bottom: 5px
+            padding-left: 0
+
+            li
+                display: flex
+                justify-content: space-between
+                width: 125px
+                margin-bottom: 7px
+                left: 50%
+                margin-left: 60px
+
+                button
+                    background-color: hsla(0, 100%, 100%, 0.5)
+                    cursor: pointer
+                    padding: 3px 3px
+                    font-family: Futura,Trebuchet MS,Arial,sans-serif
+                    color: #63584C
+                    font-size: 10px
+                    border-radius: 5px
+                    border-style: solid
+                    border-width: 2px
+                    border-color: rgba(255, 255, 255, 0.5)
+                
+                    &:hover
+                        background-color: rgba(241, 158, 136, 0.5);
+                        color: white
+
+.removeButton
+    background-color: hsl(0, 100%, 100%)
+    cursor: pointer
+    width: 20px
+    height: 20px
+    font-family: Futura,Trebuchet MS,Arial,sans-serif
+    color: #63584C
+    font-size: 11px
+    border-radius: 25%
+    border-style: none
+    border-width: 0
+    margin-left: 5px
+
+    &:hover
+        background-color: rgb(241, 158, 136);
+        color: white
+
+
+.feedbacks
+    overflow-y: scroll
+    height: 300px
+    position: relative
+    left: 50%
+    margin-left: -150px
+    width: 300px
+
+    p
+    width: 300px
+
+            
+
+
+    

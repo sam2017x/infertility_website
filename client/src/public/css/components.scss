@@ -1,0 +1,106 @@
+.radio-btns
+  #rBtns
+    display: flex
+    // .rbtn-wrapper
+    //   margin: 0px 0px 0px 10px
+.chartWrapper
+  position: relative
+  position: relative
+  min-width: 355px
+  max-width: 60vw
+  margin: auto
+  background-color: hsla(0, 100%, 100%, 0.5)
+  border-radius: 5px
+  border-style: solid
+  border-color:  hsla(0, 100%, 100%, 0.5)
+.chartLabels
+  margin-bottom: 2em
+
+.chartLabel
+  display: grid
+  grid-template-areas: ". ball . text"
+  grid-template-columns: 6% 4% 3% 87%
+  max-height: 3em
+  row-gap: 1em
+
+  img
+    grid-area: ball
+    border-radius: 20px
+    margin: auto
+    width: 20px
+    height: 20px
+  p
+    grid-area: text
+    font-size: 1.25em
+
+.chartCP
+  display: block
+  // background-color: rgba(204,0,0,0.7)
+
+.chartCPMax
+  display: block
+  // background-color: rgba(63, 191, 63,0.7)
+
+.chartCPMin
+  display: block
+  // background-color: rgba(63,127,191,0.7)
+
+.ivfChart
+  overflow: visible
+  position: relative
+  min-width: 355px
+  max-width: 60vw
+  height: 420px
+  margin: auto
+
+
+.tableDiv
+  background-color: hsla(0, 100%, 100%, 0.7)
+  .-btn
+    background-color: rgba(0, 0, 0, 0.2) !important
+
+// PRINTVIEW
+.printview
+  font-family: Chevin, sans-serif
+  // display: flex
+  flex-wrap: wrap
+  background-color: white
+  color: black
+  .stimulation-wrapper
+    flex: 0 50%
+    margin-bottom: 30px
+    border-radius: 5px
+    padding: 15px
+  dl.labeled-list
+    display: flex
+    flex-flow: row
+    flex-wrap: wrap
+    overflow: visible
+    align-items: center
+    dt
+      flex: 0 0 50%
+      overflow: hidden
+
+    dd
+      flex: 0 0 50%
+      margin-left: auto
+      overflow: hidden
+      text-align: center
+
+    dt, dd
+      padding: 5px
+    hr
+      width: 100%
+      &:last-of-type
+        display: none
+      &:first-of-type
+        display: block
+  .additional-info-wrapper
+    width: 100%
+    margin-bottom: 30px
+    border-radius: 5px
+    padding: 15px
+    .additional-info-title
+      margin-left: 0
+    .additional-info-content
+      width: 50%

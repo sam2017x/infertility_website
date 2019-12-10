@@ -1,0 +1,48 @@
+.abt
+    width: 50%
+    margin-left: 25%
+    text-align: justify
+    font-size: 16px
+    line-height: 18px
+    font-family: Futura,Trebuchet MS,Arial,sans-serif
+    color: #63584C
+    padding-bottom: 4em
+
+    p
+      margin-bottom: 10px
+
+    ul, li
+      list-style-type: none
+      line-height: 22px
+      padding: 0
+      margin: 0
+
+    h1
+      font-family: Futura,Trebuchet MS,Arial,sans-serif
+      color: #63584C
+      font-size: 24px
+      padding-bottom: 2em
+
+    h2
+      font-size: 20px
+
+.about-name-list
+  li
+    line-height: 30px
+
+
+.logo-wrapper
+  display: flex
+  height: 120px
+  justify-content: space-around
+  margin-top: 20px
+
+  .institute-logo
+    height: 100px
+    padding: 15px
+
+
+@media screen and (max-width: 900px)
+  .abt
+    width: 80%
+    margin-left: 10%

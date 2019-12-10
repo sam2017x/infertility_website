@@ -1,0 +1,10 @@
+{
+    "name": "LumiDb apiDoc",
+    "version": "0.3.0",
+    "description": "Calculates probability of live birth in ivf stimulations",
+    "title": "LumiDb API documentation",
+    "template": {
+        "withCompare": true,
+        "withGenerator": true
+    }
+  }

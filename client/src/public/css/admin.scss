@@ -1,0 +1,109 @@
+@import url('~react-table/react-table.css');
+@import url('~react-datepicker/dist/react-datepicker.css');
+
+.admin
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-areas: "..... ..... dates dates" "datas datas datas datas"  "export export export export"
+  width: 100%
+  grid-gap: 5px
+
+  .adminDatePicker 
+    grid-area: dates
+    display: grid
+    grid-template-areas: "startDate endDate setDate"
+    grid-template-columns: 1fr 1fr 1fr
+    justify-content: right
+    font-size: 1.5em
+
+    
+    .startDate
+      grid-area: startDate
+      height: 2em
+      margin-right: 1em
+      
+    .endDate
+      grid-area: endDate
+      height: 2em
+      margin-right: 1em
+  
+    .setDatesButton
+      grid-area: setDate
+      align-self: end
+
+      input
+        width: 20vw
+        height: 2em
+        margin: 0 0 0 0 
+        padding: 0 0 0 0 
+        align-content: center
+  
+  .tableDiv
+    grid-area: datas
+  
+  .excel-button
+    grid-area: export
+    margin: 0 0 0 0 !important
+
+    input
+      position: relative
+      left: 50%
+      margin-left: -7.5em
+      height: 2em
+      font-size: 1.5em
+      width: 15em
+      padding: 0 0 0 0
+
+
+//mobile buttons
+
+@media screen and (max-width: 550px) 
+  .admin
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-areas: "dates dates dates dates" "dates dates dates dates" "dates dates dates dates" "datas datas datas datas"  "export export export export"
+    width: 100%
+    grid-gap: 5px
+    
+
+    .adminDatePicker 
+      grid-area: dates
+      display: grid
+      grid-template-areas: "startDate" "endDate" "setDate"
+      grid-template-columns: 1fr
+      font-size: 1.5em
+      text-align: right
+      
+
+      
+      .startDate
+        width: 200px
+        grid-column: 1/-1
+        grid-area: startDate
+        height: 2em
+        margin-right: 20px
+        margin-bottom: 9px 
+        
+        
+
+      .endDate
+        width: 200px
+        grid-column: 1/-1
+        grid-area: endDate
+        height: 2em
+        margin-right: 20px
+        margin-bottom: 9px
+    
+      .setDatesButton
+        grid-area: setDate
+        margin-right: 20px
+        margin-bottom: 9px    
+
+
+        input
+          width: 200px
+          height: 2em
+          margin: 0 0 0 0 
+          padding: 0 0 0 0 
+          align-content: center
+

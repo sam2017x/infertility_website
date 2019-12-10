@@ -1,0 +1,501 @@
+
+
+// TITLE
+.title-container
+  display: flex
+  padding-bottom: 5em
+  width: 100%
+  align-items: center
+
+  .title-text
+    padding: 2em
+    text-align: justify
+    font-size: 16px
+    line-height: 22px
+    width: 50%
+    padding-right: 10em
+
+    span
+      cursor: pointer
+      border-bottom: 2px solid #63584C
+
+      &:hover
+        color: white
+        border-bottom: 2px solid white
+
+    h2
+      text-align: center
+
+
+  .title-img
+    padding: 4em
+    width: 50%
+    padding-left: 10em
+
+
+    img
+      height: auto
+      width: 100%
+
+// TITLE <1300px
+@media screen and (max-width: 1300px)
+  .title-container
+    display: flex
+    padding-bottom: 5em
+    width: 100%
+    align-items: center
+
+    .title-text
+      padding: 2em
+      text-align: justify
+      font-size: 16px
+      line-height: 22px
+      width: 50%
+      padding-right: 4em
+
+
+    .title-img
+      width: 50%
+      padding: 0em
+      padding-left: 4em
+
+      img
+        height: auto
+        max-width: 90%
+        min-width: 40%
+
+//TITLE MOBILE
+
+@media screen and (max-width: 900px)
+  .title-container
+    width: 80%
+    flex-direction: column
+    justify-content: center
+    margin-left: 10%
+
+    .title-text
+      width: 100%
+      padding-right: 0em
+      padding: 0em
+
+    .title-img
+      position: relative
+      left: 5%
+      width: 100%
+      padding: 0em
+      padding-left: 0em
+
+
+
+//NAVI
+.navibar
+  text-align: right
+  padding-top: 20px
+  height: 10vh
+
+
+  .navicont
+
+    .navi
+      a
+        margin-right: 20px
+        &:hover
+          border-bottom: 1.5px solid white
+
+      .lang-container
+        float: right
+        padding-right: 20px
+        a
+          margin: 0px 4px
+          &.active
+            border-bottom: 1.5px solid white
+
+
+
+// FORM
+#form
+
+.form-wrapper
+  display: flex
+  justify-content: center
+
+  .form-content
+    display: flex
+    margin-left: 20%
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+    max-width: 850px
+    min-width: 850px
+
+    .tooltip
+      width: 500px
+      max-height: 400px
+      overflow: auto
+
+    .form-group
+      display: flex
+      justify-content: flex-end
+      flex-flow: row wrap
+      background-color: rgba(255, 255, 255, 0.6)
+      padding: 10px
+      margin: auto
+      margin-bottom: 30px
+      max-width: 400px
+      text-align: right
+      border-radius: 9px
+      border-style: solid
+      border-width: 2px
+      border-color: rgba(255, 255, 255, 0.5)
+
+      .form-group-title
+        text-align: center
+        width: 100%
+
+      .form-group-content
+        width: 100%
+
+  .form-field
+    display: flex
+    justify-content: space-between
+    padding: 0px 10px 10px 10px
+
+    .input-wrapper
+      width: 50%
+
+    label
+      width: 50%
+      vertical-align: middle
+      line-height: 12px
+      padding-right: 10px;
+
+    input
+      height: 20px
+      width: 100%
+
+    span.field-validation-message
+      float: right
+      clear: left
+      color: red
+      font-size: 0.85em
+
+  .ctrl-buttons
+    margin-right: 20%
+
+
+
+    input[type="button"]
+      background-repeat: no-repeat
+      background-size: contain
+      color: #63584C
+      font-size: 15px
+      border-radius: 50px
+      width: 4em
+      height: 4em
+      border: none
+      padding: 1em
+      margin: 10px
+    .btn-rmv
+      input
+        background-image: url("./../images/rm_icon.png")
+      & :hover
+        background-color: rgba(241, 158, 136, 0.9)
+        background-image: url("./../images/rm_icon_hov.png")
+    .btn-add
+      input
+        background-image: url("./../images/add_icon.png")
+      & :hover
+        background-color: rgba(241, 158, 136, 0.9)
+        background-image: url("./../images/add_icon_hov.png")
+
+.form-footer
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-content: center
+  width: 30%
+  margin-left: 32%
+
+  .field-validation-message
+    clear: left
+    color: red
+    font-size: 0.85em
+    text-align: left
+    white-space: nowrap
+    float: right
+
+  .form-footer-field
+    justify-content: space-between
+    padding-bottom: 10px
+    display: flex
+    flex-wrap: nowrap
+
+    .radiolabel, .diagnosislabel
+      width: 120px
+
+    .input-wrapper
+      width: 80%
+
+      select
+        width: 80%
+        min-width: 120px
+        position: relative
+        float: right
+
+    .rbtns
+      width: 80%
+      padding: 0px 2px
+      justify-content: flex-end
+      .rbtn-wrapper
+        width: 40%
+        // margin: auto
+
+        label
+          padding-left: 5px
+
+  .submit-wrapper
+    display: flex
+    justify-content: center
+    padding-bottom: 2em
+
+
+//form mobile
+
+@media screen and (max-width: 900px)
+  .form-wrapper
+    flex-direction: column
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .form-content
+      width: 100%
+      min-width: auto
+      max-width: auto
+      margin-left: 0
+      flex-direction: column
+
+      .tooltip
+        width: 200px
+        max-height: 300px
+        overflow: auto
+
+
+    .ctrl-buttons
+      display: flex
+      justify-content: center
+      margin-right: 0
+
+  .form-footer
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 30%
+    left: 50%
+    margin-left: -15%
+    text-align: center
+
+    .form-footer-field
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding-bottom: 10px
+      display: flex
+
+      .radiolabel, .diagnosislabel
+        width: 100%
+        margin-bottom: 7px
+      // & > label
+      //   width: 100%
+      //   margin-bottom: 7px
+
+
+// GDPR
+
+.gdpr-notice
+  margin: 0px
+  position: sticky
+  bottom: 0
+  z-index: 3
+
+  .gdpr-content
+    background: rgba(0,0,0,0.8)
+    color: #f1f1f1
+    margin: 0px
+    width: 100%
+    padding: 15px
+    text-align: center
+    height: 8vh
+
+    button
+      background-color: hsl(0, 100%, 100%)
+      cursor: pointer
+      width: 30px
+      height: 30px
+      font-family: Futura,Trebuchet MS,Arial,sans-serif
+      color: #63584C
+      font-size: 11px
+      border-radius: 25%
+      border-style: none
+      border-width: 0
+      margin-left: 5px
+
+      &:hover
+        background-color: rgb(241, 158, 136);
+        color: white
+
+//gdpr mobile
+
+@media screen and (max-width: 900px)
+  .gdpr-content
+    padding: 0px
+
+
+// FEEDBACK
+
+.feedback-form
+  position: absolute
+  width: 350px
+  left: 50%
+  margin-left: -175px
+  padding-top: 2em
+  padding-bottom: 2em
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: center
+
+  .toggle-fb
+    position: relative
+    left: 50%
+    margin-top: 10px
+    margin-left: -10em
+    margin-bottom: 10px
+    cursor: pointer
+    background-color: hsla(0, 100%, 100%, 0.5)
+    cursor: pointer
+    padding: 14px 14px
+    width: 20em
+    font-family: Futura,Trebuchet MS,Arial,sans-serif
+    color: #63584C
+    font-size: 15px
+    border-radius: 5px
+    border-style: solid
+    border-width: 2px
+    border-color: rgba(255, 255, 255, 0.5)
+
+    &:hover
+      color: white
+      background-color: rgba(241, 158, 136, 0.5);
+
+
+  .feedback-fields
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    .fb-submit
+      width: 25%
+      margin-left: 37.5%
+
+    input, label
+      width: 100%
+      display: block
+      margin-bottom: 5px
+
+    label
+      text-align: left
+
+    input
+      margin-top: 5px
+
+    textarea
+      height: 300px
+      width: 350px
+      background-color: hsla(0, 100%, 100%, 0.5)
+      font-family: Futura,Trebuchet MS,Arial,sans-serif
+      color: #63584C
+      font-size: 13px
+      border-radius: 5px
+      border-style: solid
+      border-width: 2px
+      border-color: rgba(255, 255, 255, 0.5)
+      resize: none
+      margin-top: 5px
+
+
+
+input[type="button"]
+  background-color: hsla(0, 100%, 100%, 0.5)
+  cursor: pointer
+  padding: 10px 24px
+  width: 8em
+  font-family: Futura,Trebuchet MS,Arial,sans-serif
+  color: #63584C
+  font-size: 13px
+  margin: 10px
+  border-radius: 5px
+  border-style: solid
+  border-width: 2px
+  border-color: rgba(255, 255, 255, 0.5)
+
+  &:hover
+    background-color: rgba(241, 158, 136, 0.5);
+    color: white
+
+.fb-submit:disabled
+  background-color: #989898
+  border-color: #989898
+  color: white
+
+  &:hover
+    cursor: not-allowed
+    background-color: #989898
+    border-color: #989898
+
+
+
+.form-group-info
+  background-color: hsla(0, 100%, 100%, 0.5)
+  cursor: pointer
+  text-align: center
+  padding: 5px 5px
+  width: 2em
+  height: 2em
+  left: 90%
+  margin-top: 0.5px
+  font-family: Futura,Trebuchet MS,Arial,sans-serif
+  color: #63584C
+  font-size: 15px
+  font-weight: bold
+  border-radius: 50%
+  border-style: solid
+  border-width: 2px
+  border-color: rgba(255, 255, 255, 0.5)
+
+  &:hover
+    background-color: rgba(241, 158, 136, 0.5);
+    color: white
+
+// Errorpage
+.error-container
+  width: 100%
+  height: 100%
+  padding: 50px
+  min-height: 100vh
+
+  .errorlogo
+    float: left
+    width: 50%
+    position: relative
+    img
+      height: 100%
+      width: 100%
+
+  .oops
+    float: right
+    width: 50%
+    position: relative
+    img
+      height: 100%
+      width: 100%

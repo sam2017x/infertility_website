@@ -1,0 +1,1 @@
+exports.cert = 'secretkey123';

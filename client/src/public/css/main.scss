@@ -1,0 +1,43 @@
+
+
+body
+  font-family: Futura,Trebuchet MS,Arial,sans-serif
+  color: #63584C
+  background-color: #F3CD71
+  font-size: 13px
+  margin: 0
+
+  input, select
+    background-color: hsla(0, 100%, 100%, 0.5)
+    border-radius: 5px
+    border-style: solid
+    border-color:  hsla(0, 100%, 100%, 0.5)
+    color: #63584C
+
+  a
+    text-decoration: none
+    &:link
+      color: #63584c
+    &:hover
+      color: white !important
+    &:visited
+      color: #63584C
+
+@media screen
+  .printview
+    display: none
+
+
+
+@media print
+  body
+    background-color: white
+  .navibar, .title-container, #form, .feedback-form
+    display: none
+  .printview
+    display: flex !important
+  .chartWrapper
+    overflow: visible !important
+    margin: 0px 0px !important
+    page-break-inside: avoid
+    break-inside: avoid
